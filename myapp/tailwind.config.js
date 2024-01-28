@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const {nextui} = require("@nextui-org/react");
-import { withUt } from "uploadthing/tw";
 
-module.exports = withUt({
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,8 +12,8 @@ module.exports = withUt({
   theme: {
     extend: {
         colors: {
-          primary: '',
-          secondary: '',
+          primary: '#f29e23',
+          secondary: '#eb7525',
           grey: '#404041'
         }
     },
@@ -22,4 +21,4 @@ module.exports = withUt({
   darkMode: "class",
   plugins: [nextui()],
 
-});
+};
